@@ -8,7 +8,7 @@
 
 ## Nodejs Based Installation
 * Clone the repository by entering the command `git clone https://github.com/FrankDupree/koment-blog.git`
-* Open another terminal and run the command `mongod`.
+* Open another terminal and run the command `mongod` (MongoDB must be installed).
 * Navigate to the project folder using `cd koment-blog` on your terminal (or command prompt)
 * Install the application's dependencies with the command `npm install`.
 * Run the application using the command `npm start`.
