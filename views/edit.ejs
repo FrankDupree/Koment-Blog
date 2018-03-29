@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<% include ../views/nav %>
+  <div class="jumbotron">
+    <h1>Koment Open Source Movement</h1> 
+    <p>Welcome to koment!</p> 
+  </div>
+
+  <form action="/users/<%= user._id %>" name="update">
+  	<div class="form-group col-md-6">
+	    <label for="name">Name:</label>
+	    <input type="text" class="form-control" id="name" name="name" value="<%= user.name %>">
+	  </div>
+	  <div class="form-group col-md-6">
+	    <label for="email">Email address:</label>
+	    <input type="email" class="form-control" id="email" name="email" value="<%= user.email %>">
+	  </div>
+	  <div class="form-group col-md-6">
+	    <label for="pwd">Password:</label>
+	    <input type="password" class="form-control" id="pwd" name="password" value="">
+	  </div>
+	  	  <div class="form-group col-md-12">
+	  <button type="submit" class="btn btn-default" id="sub">Update</button>
+	    
+	  </div>
+  </form> 
+</div>
+<script  src="/static/js/jquery.min.js"></script>
+<script  src="/static/js/bootstrap.min.js"></script>
+<script  src="/static/js/script.js"></script>
+</body>
+</html>

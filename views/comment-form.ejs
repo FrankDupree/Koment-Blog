@@ -1,0 +1,17 @@
+<form action="/comments" name="comment">
+  	<div class="form-group comment">
+	    <textarea rows="4" cols="50" type="text" class="form-control" id="comment" name="comment"></textarea>
+	</div>
+	<div class="userCon">
+		<button type="submit" class="btn btn-default com">Submit</button>
+		<input type="hidden" value="" name="parent_comment_id"/>
+  		<select class="form-control user" name="user_id">
+  			 <option value="usr">select a user</option> 
+			 <% for(var i=0; i<users.length; i++) {%>
+       			<option value="<%= users[i]._id %>"><%= users[i].name %></option>                     
+			 <% } %>   
+		</select>
+	</div>
+</form>
+
+

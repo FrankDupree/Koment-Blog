@@ -1,0 +1,24 @@
+{
+  "name": "Koment-Blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jasmine tests/",
+    "dev": "nodemon server.js"
+  },
+  "author": "Frank Akogun",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}

@@ -1,0 +1,48 @@
+#starterKit p{
+	margin-top: 12px;
+	text-align: justify;
+}
+
+
+#starterKit a{
+	color: #444;
+	text-decoration: none;
+    letter-spacing: -.7px;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+
+
+.comment button{
+	text-align: right;
+}
+
+.comment textarea{
+	width: 600px;
+	margin-top: 12px;
+}
+
+.userCon button select{
+
+	float:left;
+
+}
+
+.userCon {
+	width:600px;
+}
+
+.userCon select{
+	width: 200px;
+    float: right;
+}
+
+#koment{
+	margin:20px;
+}
+#koment p{
+	text-align: center;
+	font-size: 19px;
+	color: #656c7a;
+	cursor:pointer;
+}

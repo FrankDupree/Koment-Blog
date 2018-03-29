@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<% include ../views/nav %>
+  <div class="jumbotron">
+    <h1>Koment Open Source Movement</h1> 
+    <p>Welcome to koment!</p> 
+  </div> 
+
+  <table class="table table-striped table-hover table-users">
+          <thead>
+            <tr>            
+              <th class="hidden-phone">Name</th>
+              <th class="hidden-phone">Email</th>
+              <th class="hidden-phone">Edit</th>
+              <th class="hidden-phone">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+                <% for(var i=0; i<users.length; i++) {%>
+                    <tr>                        
+                        <td><%= users[i].name %></td>
+                        <td><%= users[i].email %></td>
+                        <td><a class="btn mini blue-stripe" href="/user/edit/<%= users[i]._id %>">Edit</a></td>
+                        <td><a onclick="deleteUser('<%= users[i]._id %>')" class="confirm-delete btn mini red-stripe" id="del">Delete</a></td>
+                    </tr>
+                <% } %>               
+          </tbody>
+
+        </table>
+</div>
+      <% include ../views/scripts %>
+</body>
+</html>
